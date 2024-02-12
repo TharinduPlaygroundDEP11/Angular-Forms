@@ -1,0 +1,30 @@
+input[type="text"] {
+  padding: 5px;
+  outline: 2px solid lightgray;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+
+  &:focus {
+    outline-color: deepskyblue;
+  }
+
+  &.ng-dirty.ng-invalid {
+    outline-color: red;
+  }
+
+  &.ng-dirty.ng-valid {
+    outline-color: greenyellow;
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+
+  &:hover {
+    cursor:pointer;
+    background-color:lightblue;
+  }
+}
+

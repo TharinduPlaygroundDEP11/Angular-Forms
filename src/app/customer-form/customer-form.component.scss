@@ -1,0 +1,41 @@
+div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  label {
+    width: 150px;
+  }
+}
+
+input[type="text"] {
+  padding: 5px;
+  flex-grow: 1;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+
+  &:focus {
+    outline-color: deepskyblue;
+  }
+
+  &.ng-dirty.ng-invalid {
+    outline-color: red;
+  }
+
+  &.ng-dirty.ng-valid {
+    outline-color: green;
+  }
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #71b3e8;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #4584d9;
+    border: none;
+  }
+}
